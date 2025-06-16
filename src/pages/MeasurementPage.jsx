@@ -53,7 +53,7 @@ const MeasurementPage = ({ updateResults }) => {
     const finalRom = Math.floor(Math.random() * 90) + 90; 
     const finalStrength = Math.floor(Math.random() * 70) + 30; 
     const finalRecommendations = [
-      `Based on ROM (${finalRom}°) and Strength (${finalStrength} units):`,
+      `Based on ROM (${finalRom}°) and Strength (${finalStrength} pounds):`,
       "Perform gentle active-assisted ROM exercises twice daily.",
       "Isometric strengthening for 10-second holds, 10 repetitions.",
       "Consider applying heat pack before exercises."
@@ -70,8 +70,8 @@ const MeasurementPage = ({ updateResults }) => {
 
   const instructions = [
     { title: "Step 1: Preparation", text: "Start with your arm fully extended. Ensure the device is securely and comfortably fitted.", icon: <PlayCircle className="w-12 h-12 text-blue-500 dark:text-blue-400" /> },
-    { title: "Step 2: Initial ROM", text: "Slowly start bending your arm. Continue until you reach approximately a 90-degree angle, then click 'Reached 90 Degrees'.", icon: <Activity className="w-12 h-12 text-blue-500 dark:text-blue-400" /> },
-    { title: "Step 3: Strength Test Setup", text: "You've reached 90 degrees. Lock the brace. When ready, press 'Start Strength Test' and PUSH against the brace.", icon: <Zap className="w-12 h-12 text-orange-500 dark:text-orange-400" /> },
+    { title: "Step 2: Initial ROM", text: "Slowly start bending your arm. Continue until you reach approximately a 110-degree angle, then click 'Reached 110 Degrees'.", icon: <Activity className="w-12 h-12 text-blue-500 dark:text-blue-400" /> },
+    { title: "Step 3: Strength Test Setup", text: "You've reached 110 degrees. Lock the brace. When ready, press 'Start Strength Test' and PUSH against the brace.", icon: <Zap className="w-12 h-12 text-orange-500 dark:text-orange-400" /> },
     { title: "Step 4: Continue ROM", text: "Strength test complete! Unlock the brace. Continue bending your arm as far as you comfortably can to complete the Range of Motion measurement.", icon: <Repeat className="w-12 h-12 text-blue-500 dark:text-blue-400" /> },
     { title: "Step 5: End Test", text: "When you are unable to bend your arm any further, press the 'End Test' button.", icon: <StopCircle className="w-12 h-12 text-red-500 dark:text-red-400" /> }
   ];
@@ -130,7 +130,7 @@ const MeasurementPage = ({ updateResults }) => {
             )}
             {step === 2 && (
               <Button onClick={handleNextStep} size="lg" className="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-semibold">
-                Reached 90 Degrees <CheckCircle className="ml-2 h-5 w-5" />
+                Reached 110 Degrees <CheckCircle className="ml-2 h-5 w-5" />
               </Button>
             )}
             {step === 3 && showStartStrengthButton && (
