@@ -130,7 +130,7 @@ const MeasurementPage = ({ updateResults }) => {
             )}
             {step === 2 && (
               <Button onClick={handleNextStep} size="lg" className="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-semibold">
-                Reached 90 Degrees <CheckCircle className="ml-2 h-5 w-5" />
+                Reached 110 Degrees <CheckCircle className="ml-2 h-5 w-5" />
               </Button>
             )}
             {step === 3 && showStartStrengthButton && (
