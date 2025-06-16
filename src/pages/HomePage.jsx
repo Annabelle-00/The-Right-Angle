@@ -91,7 +91,7 @@ const HomePage = ({ handleConnectDevice, isConnected, romValue, strengthValue, r
             </CardHeader>
             <CardContent className="flex-grow flex items-center justify-center">
               {strengthValue !== null ? (
-                <p className="text-5xl font-bold text-green-700 dark:text-green-300">{strengthValue} <span className="text-xl">units</span></p>
+                <p className="text-5xl font-bold text-green-700 dark:text-green-300">{strengthValue} <span className="text-xl">pounds</span></p>
               ) : (
                 <p className="text-slate-500 dark:text-slate-400">No data yet. Complete a measurement.</p>
               )}
