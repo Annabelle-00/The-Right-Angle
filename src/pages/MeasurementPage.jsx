@@ -54,12 +54,8 @@ const MeasurementPage = ({ updateResults }) => {
   const handleEndTest = () => {
     const finalRom = Math.floor(Math.random() * 90) + 90; 
     const finalStrength = Math.floor(Math.random() * 70) + 30; 
-    const finalRecommendations = [
-      `Based on ROM (${finalRom}°) and Strength (${finalStrength} pounds):`,
-      "Perform gentle active-assisted ROM exercises twice daily.",
-      "Isometric strengthening for 10-second holds, 10 repetitions.",
-      "Consider applying heat pack before exercises."
-    ];
+    const finalRecommendations = getRecommendations(finalRom, finalStrength);
+    
     updateResults(finalRom, finalStrength, finalRecommendations);
     toast({
       title: "Test Ended!",
