@@ -5,6 +5,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { useToast } from "@/components/ui/use-toast";
 import { ArrowLeft, PlayCircle, StopCircle, CheckCircle, Zap, Activity, Repeat, ChevronsRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { getRecommendations } from '@/components/lib/utils';
+
 
 const MeasurementPage = ({ updateResults }) => {
   const navigate = useNavigate();
