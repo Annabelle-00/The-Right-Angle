@@ -41,7 +41,7 @@ const HomePage = ({ isDarkMode, toggleDarkMode, handleConnectDevice, simulateDat
           </Button>
         </motion.div>
         <motion.h1 
-          className="text-5xl sm:text-6xl font-extrabold tracking-tight hero-gradient text-transparent bg-clip-text py-2"
+          className="text-5xl sm:text-6xl font-extrabold tracking-tight hero-gradient text-white bg-clip-text py-2"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2, ease: "backOut" }}
